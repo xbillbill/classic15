@@ -7,6 +7,7 @@ files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/c
 files=[f for f in files if len(json.load(open(f)).get('quiz',[]))!=5]
 
 def generate(path):
+    started=time.time(); error='unknown failure'
     d=json.load(open(path)); passage='\n\n'.join(d.get('paragraphs',[])); passage=passage[:1800]
     prompt=f'''Return ONLY valid JSON in this exact shape: {{"questions":[five objects]}}. The questions array must contain exactly 5 engaging comprehension questions about this reading chunk. Test main idea, motivation, cause/effect, sequence, inference, or evidence. Do not ask whether a sentence appeared. Each object must have question, options (exactly 4 strings), answer (integer 0-3), explanation. Base every question on the passage.\n\n{passage}'''
     for model in MODELS:
@@ -22,8 +23,6 @@ def generate(path):
     return path,None,round(time.time()-started,1),str(error)
 
 def work(path):
-    global started
-    started=time.time()
     return generate(path)
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
