@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 import concurrent.futures, glob, json, re, time, urllib.request
 from pathlib import Path
+from datetime import datetime, timezone
 
 MODELS=['gemma4:e2b-nvfp4','qwen2.5vl:3b']
 files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
 files=[f for f in files if len(json.load(open(f)).get('quiz',[]))!=5]
+status_path=Path('content/quiz-generation-status.json')
+all_files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
+def write_status(current=None,last=None,failed=None):
+    valid=sum(len(json.load(open(f)).get('quiz',[]))==5 for f in all_files)
+    payload={'updated_at':datetime.now(timezone.utc).isoformat(),'total_chunks':len(all_files),'valid_chunks':valid,'remaining_chunks':len(all_files)-valid,'current_chunk':current,'last_result':last,'failed_chunk':failed}
+    status_path.write_text(json.dumps(payload,indent=2),encoding='utf-8')
+write_status()
 
 def generate(path):
     started=time.time(); error='unknown failure'
@@ -26,4 +34,8 @@ def work(path):
     return generate(path)
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
-    for path,model,seconds,error in pool.map(work,files): print(f'{path}: {model or "FAILED"} {seconds}s {error or ""}',flush=True)
+    for path in files:
+        write_status(current=path)
+        path,model,seconds,error=work(path)
+        write_status(last={'chunk':path,'model':model,'seconds':seconds,'ok':bool(model)},failed=None if model else path)
+        print(f'{path}: {model or "FAILED"} {seconds}s {error or ""}',flush=True)
