@@ -7,12 +7,12 @@ files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/c
 files=[f for f in files if len(json.load(open(f)).get('quiz',[]))!=5]
 
 def generate(path):
-    d=json.load(open(path)); passage='\n\n'.join(d.get('paragraphs',[])); passage=passage[:6500]
+    d=json.load(open(path)); passage='\n\n'.join(d.get('paragraphs',[])); passage=passage[:3600]
     prompt=f'''Write exactly five engaging comprehension questions about this reading chunk. Test main idea, motivation, cause/effect, sequence, inference, or evidence. Do not ask whether a sentence appeared. Every option must be plausible and only one correct. Return only a JSON array. Each object must have question, options (4 strings), answer (0-3), explanation.\n\n{passage}'''
     for model in MODELS:
         for attempt in range(2):
             try:
-                body=json.dumps({'model':model,'prompt':prompt,'stream':False,'format':'json','options':{'temperature':.1,'num_predict':1800}}).encode()
+                body=json.dumps({'model':model,'prompt':prompt,'stream':False,'format':'json','options':{'temperature':.1,'num_predict':1400}}).encode()
                 req=urllib.request.Request('http://127.0.0.1:11434/api/generate',data=body,headers={'Content-Type':'application/json'})
                 with urllib.request.urlopen(req,timeout=180) as r: raw=json.loads(r.read()).get('response','')
                 m=re.search(r'\[[\s\S]*\]',raw); quiz=json.loads(m.group(0)) if m else None
@@ -26,5 +26,5 @@ def work(path):
     started=time.time()
     return generate(path)
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
     for path,model,seconds,error in pool.map(work,files): print(f'{path}: {model or "FAILED"} {seconds}s {error or ""}',flush=True)
