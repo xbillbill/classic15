@@ -1,0 +1,64 @@
+{
+  "book": "essays-montaigne",
+  "title": "Essays",
+  "author": "Michel de Montaigne",
+  "model": "gemma4:e2b-nvfp4",
+  "seconds": 13.0,
+  "quiz": [
+    {
+      "question": "What was Montaigne's primary literary goal in writing his Essays?",
+      "options": [
+        "To gain fame and celebrity.",
+        "To leave France and the world something to be remembered by.",
+        "To write poetry and rhetorical effects.",
+        "To provide a literary anatomy of his mind."
+      ],
+      "answer": 2,
+      "explanation": "The passage states that Montaigne desired to 'leave France, nay, and the world, something to be remembered by, something which should tell what kind of a man he was--what he felt, thought, suffered.'"
+    },
+    {
+      "question": "According to the text, what was a key characteristic of Montaigne's approach to writing?",
+      "options": [
+        "He wrote from necessity and for fame.",
+        "He focused on eloquence, rhetorical effect, and poetry.",
+        "He sought to dissect his mind and show how it was made.",
+        "He wrote only about external objects."
+      ],
+      "answer": 2,
+      "explanation": "The passage describes his essays as a 'literary anatomy, where we get a diagnosis of the writer’s mind, made by himself at different levels and under a large variety of operating influences.'"
+    },
+    {
+      "question": "What circumstances did the author suggest limited the value and rank of the essayist during that period?",
+      "options": [
+        "The abundance of books and easy intellectual intercourse.",
+        "The imperfect state of education, the scarcity of books, and limited intellectual intercourse.",
+        "The lack of interest in moral philosophy.",
+        "The dominance of classical literature."
+      ],
+      "answer": 2,
+      "explanation": "The text mentions 'the imperfect state of education, the comparative scarcity of books, and the limited opportunities of intellectual intercourse' as drawbacks of the period."
+    },
+    {
+      "question": "How does the text suggest Montaigne's fame became world-wide?",
+      "options": [
+        "Through political influence and royal patronage.",
+        "By becoming a man of letters and a moralist.",
+        "By achieving celebrity in Gascony and throughout France.",
+        "By writing in the principal languages of Europe."
+      ],
+      "answer": 2,
+      "explanation": "The text implies that his renown became world-wide through his unique position 'as a man of letters and a moralist,' suggesting a broader impact than mere local celebrity."
+    },
+    {
+      "question": "What is the main argument regarding the nature of true fame, presented in the passage?",
+      "options": [
+        "Fame is tied to a specific period and country.",
+        "Fame belongs to no period and no country.",
+        "Fame is achieved through political influence.",
+        "Fame is measured by the number of books published."
+      ],
+      "answer": 1,
+      "explanation": "The passage states, 'A man of genius belongs to no period and no country. He speaks the language of nature, which is always everywhere the same. This is true fame.'"
+    }
+  ]
+}

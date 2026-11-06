@@ -1,0 +1,64 @@
+{
+  "book": "aeneid",
+  "title": "The Aeneid",
+  "author": "Virgil",
+  "model": "llama3:8b",
+  "seconds": 64.8,
+  "quiz": [
+    {
+      "question": "What is the central idea of The Aeneid?",
+      "options": [
+        "The story of Aeneas' journey to Italy",
+        "The Trojan War and its aftermath",
+        "The struggles of the Trojan people",
+        "The power of the gods"
+      ],
+      "answer": 0,
+      "explanation": "The central idea of The Aeneid is the story of Aeneas' journey to Italy, where he will found the city of Rome and become the ancestor of the Roman people."
+    },
+    {
+      "question": "What motivates Juno's actions in the poem?",
+      "options": [
+        "Her love for Aeneas",
+        "Her hatred for the Trojans",
+        "Her desire for power and control",
+        "Her grief over the loss of Troy"
+      ],
+      "answer": 2,
+      "explanation": "Juno's actions are motivated by her desire for power and control, as well as her hatred for the Trojans and her grief over the loss of Troy."
+    },
+    {
+      "question": "What is the cause of the storm that Aeneas' fleet encounters?",
+      "options": [
+        "Aeolus' raising of the winds",
+        "Juno's anger at the Trojans",
+        "The gods' displeasure with Aeneas",
+        "The natural fury of the sea"
+      ],
+      "answer": 0,
+      "explanation": "The cause of the storm is Aeolus' raising of the winds at Juno's request."
+    },
+    {
+      "question": "What is the sequence of events in the poem?",
+      "options": [
+        "Aeneas' journey to Italy, the storm, and the arrival in Africa",
+        "The storm, Aeneas' arrival in Africa, and his journey to Italy",
+        "The Trojan War, the fall of Troy, and Aeneas' journey to Italy",
+        "Aeneas' journey to Italy, the founding of Rome, and the establishment of the Roman Empire"
+      ],
+      "answer": 1,
+      "explanation": "The sequence of events in the poem is the storm, Aeneas' arrival in Africa, and his journey to Italy."
+    },
+    {
+      "question": "What can be inferred about Aeneas' character from his speech in the poem?",
+      "options": [
+        "He is a brave and confident leader",
+        "He is a pious and devout worshipper",
+        "He is a melancholic and introspective person",
+        "He is a cunning and manipulative strategist"
+      ],
+      "answer": 2,
+      "explanation": "From Aeneas' speech, it can be inferred that he is a melancholic and introspective person, who is deeply affected by the struggles and hardships he has faced."
+    }
+  ]
+}

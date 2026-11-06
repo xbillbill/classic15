@@ -1,0 +1,64 @@
+{
+  "book": "confessions",
+  "title": "The Confessions",
+  "author": "Saint Augustine",
+  "model": "gemma4:e2b-nvfp4",
+  "seconds": 18.9,
+  "quiz": [
+    {
+      "question": "What is the central theological argument Augustine presents regarding human nature and mortality?",
+      "options": [
+        "Human nature is defined by its capacity for sin.",
+        "Human nature is defined by its restlessness until it finds repose in God.",
+        "Human nature is defined by its ability to seek external praise.",
+        "Human nature is defined by its capacity to judge others."
+      ],
+      "answer": 1,
+      "explanation": "The passage states, 'our heart is restless, until it repose in Thee.' This establishes the central idea that human nature is characterized by a restless search for ultimate fulfillment in God."
+    },
+    {
+      "question": "According to Augustine, how should one call upon God to truly know Him?",
+      "options": [
+        "By performing rituals and seeking external praise.",
+        "By believing in a preacher or external authority.",
+        "By calling on Him in a way that leads to knowing Him.",
+        "By demanding that God enter into one's heart."
+      ],
+      "answer": 2,
+      "explanation": "Augustine argues, 'how shall they call on Him in whom they have not believed?' and 'how shall I call upon my God, my God and Lord, since, when I call for Him, I shall be calling Him to myself?' True calling is defined by the pursuit of knowledge."
+    },
+    {
+      "question": "What is the cause of the human inability to contain God, according to the text?",
+      "options": [
+        "Because God is too vast to be contained by finite vessels.",
+        "Because all things cannot contain God wholly, yet they contain a part of Him.",
+        "Because God only fills things that are worthy of Him.",
+        "Because God is not needed by anything that exists."
+      ],
+      "answer": 2,
+      "explanation": "The text asks, 'do they contain part of Thee? or each its own part, the greater more, the smaller less?' and 'or, art Thou wholly every where, while nothing contains Thee wholly?' This suggests that things contain a part, but not wholly."
+    },
+    {
+      "question": "What is the consequence of acknowledging God's truth for the believer?",
+      "options": [
+        "They are absolved from all sin.",
+        "They are given the ability to contend in judgment with God.",
+        "They are assured that they are God's salvation.",
+        "They are given the ability to judge others."
+      ],
+      "answer": 2,
+      "explanation": "The text states, 'I contend not in judgment with Thee; for if Thou, Lord, shouldest mark iniquities, O Lord, who shall abide it?' Acknowledging God's truth leads to a cessation of self-judgment."
+    },
+    {
+      "question": "What evidence does Augustine use to demonstrate that God is ever-present?",
+      "options": [
+        "He is the source of all good things.",
+        "He is the one who fills things and gathers us.",
+        "He is the one who upholds all things.",
+        "He is the one who creates all things."
+      ],
+      "answer": 2,
+      "explanation": "Augustine states, 'Thou art not cast down, but Thou upliftest us; Thou art not dissipated, but Thou gatherest us.' This demonstrates God's active, ever-present role in sustaining creation."
+    }
+  ]
+}

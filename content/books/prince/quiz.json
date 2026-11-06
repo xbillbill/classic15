@@ -1,0 +1,64 @@
+{
+  "book": "prince",
+  "title": "The Prince",
+  "author": "Niccolò Machiavelli",
+  "model": "llama3:8b",
+  "seconds": 80.7,
+  "quiz": [
+    {
+      "question": "What is the central idea of The Prince by Niccolò Machiavelli?",
+      "options": [
+        "The importance of being loved by one's subjects",
+        "The need for princes to be feared and respected",
+        "The art of war and military strategy",
+        "The role of fortune in human affairs"
+      ],
+      "answer": 1,
+      "explanation": "The central idea of The Prince is the importance of being loved by one's subjects, as well as the need for princes to be feared and respected. Machiavelli argues that a prince should strive to be both loved and feared, as this will ensure their stability and security."
+    },
+    {
+      "question": "What motivates Machiavelli to write The Prince?",
+      "options": [
+        "To advise the Medici family on how to maintain power",
+        "To provide a guide for princes on how to achieve and maintain power",
+        "To criticize the Medici family for their lack of power",
+        "To promote the idea of a republic over a monarchy"
+      ],
+      "answer": 1,
+      "explanation": "Machiavelli was motivated to write The Prince to provide a guide for princes on how to achieve and maintain power. He believed that the Medici family, who had recently lost power, could benefit from his advice on how to regain and maintain their position."
+    },
+    {
+      "question": "What is the cause-and-effect relationship between the Medici family's loss of power and Machiavelli's dismissal from office?",
+      "options": [
+        "The Medici family's loss of power caused Machiavelli's dismissal from office",
+        "Machiavelli's dismissal from office was the cause of the Medici family's loss of power",
+        "The Medici family's loss of power had no effect on Machiavelli's dismissal from office",
+        "Machiavelli's dismissal from office was a result of the Medici family's loss of power"
+      ],
+      "answer": 3,
+      "explanation": "The Medici family's loss of power had no direct effect on Machiavelli's dismissal from office. Machiavelli was dismissed from office when the Medici family returned to power in 1512, as a result of the Republic's fall."
+    },
+    {
+      "question": "What is the sequence of events that led to Machiavelli's imprisonment and exile?",
+      "options": [
+        "Machiavelli was imprisoned and then exiled",
+        "Machiavelli was exiled and then imprisoned",
+        "Machiavelli was imprisoned and then returned to office",
+        "Machiavelli was exiled and then returned to office"
+      ],
+      "answer": 1,
+      "explanation": "Machiavelli was imprisoned and then exiled. He was imprisoned in 1512 and later exiled and returned to San Casciano."
+    },
+    {
+      "question": "What can be inferred about Machiavelli's views on the role of fortune in human affairs?",
+      "options": [
+        "Machiavelli believed that fortune plays a minor role in human affairs",
+        "Machiavelli believed that fortune plays a major role in human affairs",
+        "Machiavelli believed that fortune is unpredictable and can be influenced by human actions",
+        "Machiavelli believed that fortune is a fixed and unchangeable force"
+      ],
+      "answer": 2,
+      "explanation": "Machiavelli believed that fortune plays a major role in human affairs, but also believed that human actions can influence the course of events. He argued that a prince should strive to be bold and take risks to shape their own fortune."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "book": "utopia",
+  "title": "Utopia",
+  "author": "Thomas More",
+  "model": "llama3:8b",
+  "seconds": 62.7,
+  "quiz": [
+    {
+      "question": "What was the primary motivation behind Thomas More's writing of Utopia?",
+      "options": [
+        "To attack the chief political and social evils of his time",
+        "To describe the ideal state of a commonwealth",
+        "To tell the story of his travels to the Low Countries",
+        "To show the sun with a lantern"
+      ],
+      "answer": 0,
+      "explanation": "The primary motivation behind Thomas More's writing of Utopia was to attack the chief political and social evils of his time, as stated in the passage."
+    },
+    {
+      "question": "What was the cause of Thomas More's absence from England for six months?",
+      "options": [
+        "He was sent on a diplomatic mission to the Low Countries",
+        "He was on a pilgrimage to Rome",
+        "He was studying law at Oxford",
+        "He was on a business trip to Antwerp"
+      ],
+      "answer": 0,
+      "explanation": "The cause of Thomas More's absence from England for six months was that he was sent on a diplomatic mission to the Low Countries, as stated in the passage."
+    },
+    {
+      "question": "In what year was Utopia first printed?",
+      "options": [
+        "1515",
+        "1516",
+        "1518",
+        "1551"
+      ],
+      "answer": 2,
+      "explanation": "Utopia was first printed in 1518, as stated in the passage."
+    },
+    {
+      "question": "What was the name of the burgomaster of Antwerp who was so pleased with Utopia that he knew it all by heart?",
+      "options": [
+        "Peter Giles",
+        "Raphael Hythloday",
+        "George Temse",
+        "The Margrave of Bruges"
+      ],
+      "answer": 1,
+      "explanation": "The name of the burgomaster of Antwerp who was so pleased with Utopia that he knew it all by heart was Peter Giles, as stated in the passage."
+    },
+    {
+      "question": "What was the name of the book that Thomas More wrote, which was not printed until 1557?",
+      "options": [
+        "Utopia",
+        "The History of the Life and Death of King Edward V., and of the Usurpation of Richard III.",
+        "The Life and Death of Cardinal Morton",
+        "The Travels of Thomas More"
+      ],
+      "answer": 1,
+      "explanation": "The name of the book that Thomas More wrote, which was not printed until 1557, was The History of the Life and Death of King Edward V., and of the Usurpation of Richard III., as stated in the passage."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "book": "republic",
+  "title": "The Republic",
+  "author": "Plato",
+  "model": "qwen2.5-coder:7b-instruct-q4_K_M",
+  "seconds": 118.7,
+  "quiz": [
+    {
+      "question": "What is the central theme of The Republic?",
+      "options": [
+        "The nature of justice",
+        "The role of democracy",
+        "The importance of education",
+        "The concept of the ideal state"
+      ],
+      "answer": 3,
+      "explanation": "The central theme of The Republic is the search for justice and the nature of the ideal state."
+    },
+    {
+      "question": "What motivates Glaucon and Adeimantus to propose the construction of an ideal state?",
+      "options": [
+        "Their desire for personal wealth and power",
+        "Their belief in the importance of justice and the common good",
+        "Their fear of political instability",
+        "Their desire to escape the constraints of their current society"
+      ],
+      "answer": 1,
+      "explanation": "Glaucon and Adeimantus propose the construction of an ideal state because they believe in the importance of justice and the common good."
+    },
+    {
+      "question": "What is the cause and effect of the decline of the ideal state?",
+      "options": [
+        "Cause: The ideal state is too complex to be realized. Effect: It quickly degenerates into democracy and tyranny.",
+        "Cause: The ideal state is too simple. Effect: It leads to political stability and prosperity.",
+        "Cause: The ideal state is too democratic. Effect: It results in a lack of order and stability.",
+        "Cause: The ideal state is too authoritarian. Effect: It leads to the suppression of individual freedom."
+      ],
+      "answer": 0,
+      "explanation": "The cause of the decline of the ideal state is that it is too complex to be realized, and the effect is that it quickly degenerates into democracy and tyranny."
+    },
+    {
+      "question": "What is the sequence of government forms presented in The Republic?",
+      "options": [
+        "Ideal state -> Democracy -> Tyranny",
+        "Ideal state -> Tyranny -> Democracy",
+        "Democracy -> Ideal state -> Tyranny",
+        "Tyranny -> Democracy -> Ideal state"
+      ],
+      "answer": 0,
+      "explanation": "The sequence of government forms presented in The Republic is Ideal state -> Democracy -> Tyranny."
+    },
+    {
+      "question": "What inference can be drawn from the banishment of Homer and the dramatic poets?",
+      "options": [
+        "Homer and the dramatic poets were not considered important figures in Greek culture.",
+        "Homer and the dramatic poets were considered to be imitators of truth and were therefore worthy of banishment.",
+        "Homer and the dramatic poets were considered to be sources of entertainment and were therefore not worthy of banishment.",
+        "Homer and the dramatic poets were considered to be sources of inspiration and were therefore worthy of banishment."
+      ],
+      "answer": 3,
+      "explanation": "The inference that can be drawn from the banishment of Homer and the dramatic poets is that they were considered to be sources of inspiration and were therefore worthy of banishment."
+    }
+  ]
+}

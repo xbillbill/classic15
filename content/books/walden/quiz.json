@@ -1,0 +1,64 @@
+{
+  "book": "walden",
+  "title": "Walden",
+  "author": "Henry David Thoreau",
+  "model": "gemma4:e2b-nvfp4",
+  "seconds": 18.5,
+  "quiz": [
+    {
+      "question": "What is Thoreau's primary purpose in including personal anecdotes and details about his life in Walden?",
+      "options": [
+        "To entertain the reader with fictional stories.",
+        "To demonstrate the superiority of his personal experience.",
+        "To provide a sincere account of his life, addressing egotism.",
+        "To criticize the townsmen's curiosity."
+      ],
+      "answer": 2,
+      "explanation": " The passage explicitly states, 'Moreover, I, on my side, require of every writer, first or last, a simple and sincere account of his own life, and not merely what he has heard of other men’s lives.'"
+    },
+    {
+      "question": "Which of the following best illustrates the cause-and-effect relationship described regarding inherited property?",
+      "options": [
+        "Inherited property leads to greater prosperity.",
+        "Inherited property forces men to labor unnecessarily.",
+        "Inherited property ensures that men find labor enough to subdue and cultivate a few cubic feet of flesh.",
+        "Inherited property is a necessary burden for societal stability."
+      ],
+      "answer": 2,
+      "explanation": " The text argues that men with inherited property are burdened by 'unnecessary inherited encumbrances,' and struggle with 'no such unnecessary inherited encumbrances, find it labor enough to subdue and cultivate a few cubic feet of flesh.'"
+    },
+    {
+      "question": "Based on the text, what is Thoreau's main argument regarding the 'laboring man'?",
+      "options": [
+        "He is inherently incapable of achieving true integrity.",
+        "He is too clumsy and lacks the necessary leisure for true integrity.",
+        "He must always prioritize market value over personal well-being.",
+        "He should focus only on the most delicate handling of life's fruits."
+      ],
+      "answer": 2,
+      "explanation": " The passage states, 'Actually, the laboring man has not leisure for a true integrity day by day; he cannot afford to sustain the manliest relations to men; his labor would be depreciated in the market.'"
+    },
+    {
+      "question": "What does Thoreau suggest is the danger of 'blind obedience to a blundering oracle'?",
+      "options": [
+        "It leads to great societal order.",
+        "It results in the acceptance of new ideas.",
+        "It causes people to fail to see where they fall.",
+        "It ensures that all actions are correct."
+      ],
+      "answer": 3,
+      "explanation": " The text warns, 'So much for a blind obedience to a blundering oracle, throwing the stones over their heads behind them, and not seeing where they fell.'"
+    },
+    {
+      "question": "What is the central theme Thoreau attempts to convey through his observations about the common lives of men?",
+      "options": [
+        "The importance of self-emancipation and questioning established norms.",
+        "The necessity of accepting inherited social structures.",
+        "The superiority of private opinion over public opinion.",
+        "The value of physical labor over intellectual pursuits."
+      ],
+      "answer": 1,
+      "explanation": " The passage emphasizes that 'Public opinion is a weak tyrant compared with our own private opinion,' and that 'what everybody echoes or in silence passes by as true to-day may turn out to be falsehood to-morrow.'"
+    }
+  ]
+}

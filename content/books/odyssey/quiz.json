@@ -1,0 +1,64 @@
+{
+  "book": "odyssey",
+  "title": "The Odyssey",
+  "author": "Homer",
+  "model": "llama3:8b",
+  "seconds": 69.0,
+  "quiz": [
+    {
+      "question": "What is the main argument presented by the author in the preface to the first edition of The Odyssey?",
+      "options": [
+        "The Odyssey was written entirely at and drawn entirely from the place now called Trapani on the West Coast of Sicily.",
+        "The poem was entirely written by a very young woman, who lived at the place now called Trapani, and introduced herself into her work under the name of Nausicaa.",
+        "The Odyssey is a work of fiction and not based on historical events.",
+        "The author is unsure of the origins of the Odyssey and does not present any arguments."
+      ],
+      "answer": 0,
+      "explanation": "The author presents the main argument that the Odyssey was written entirely at and drawn entirely from the place now called Trapani on the West Coast of Sicily."
+    },
+    {
+      "question": "What is the author's purpose in translating the Odyssey into prose?",
+      "options": [
+        "To provide a more accessible version of the Odyssey for readers who cannot read the original.",
+        "To prove that the Odyssey is a work of fiction and not based on historical events.",
+        "To show that the Odyssey is a poem and not a novel.",
+        "To demonstrate the author's own literary skills."
+      ],
+      "answer": 0,
+      "explanation": "The author's purpose is to provide a more accessible version of the Odyssey for readers who cannot read the original."
+    },
+    {
+      "question": "What is the significance of the passage from the Odyssey that begins with 'Tell me, Muse, of that man, so ready at need...'?",
+      "options": [
+        "It is the opening passage of the Odyssey.",
+        "It is a passage that is borrowed from the Iliad.",
+        "It is a passage that is significant to the author's argument about the origins of the Odyssey.",
+        "It is a passage that is not significant to the author's argument."
+      ],
+      "answer": 0,
+      "explanation": "The passage is the opening passage of the Odyssey and sets the tone for the rest of the poem."
+    },
+    {
+      "question": "What is the author's opinion about the relationship between the Odyssey and the Iliad?",
+      "options": [
+        "The Odyssey is a sequel to the Iliad.",
+        "The Odyssey is a prequel to the Iliad.",
+        "The Odyssey and the Iliad are two separate works that do not have a direct relationship.",
+        "The Odyssey is heavily influenced by the Iliad."
+      ],
+      "answer": 3,
+      "explanation": "The author believes that the Odyssey is heavily influenced by the Iliad, and that the Odyssey abounds in passages borrowed from the Iliad."
+    },
+    {
+      "question": "What is the author's opinion about the unity of the Odyssey?",
+      "options": [
+        "The Odyssey is a unified work that tells a single story.",
+        "The Odyssey is a fragmented work that tells multiple stories.",
+        "The Odyssey is a work that is divided into two distinct poems.",
+        "The Odyssey is a work that is not unified at all."
+      ],
+      "answer": 2,
+      "explanation": "The author believes that the Odyssey is a work that is divided into two distinct poems: the Return of Ulysses and the story of Penelope and the suitors."
+    }
+  ]
+}

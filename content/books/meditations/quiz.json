@@ -1,0 +1,64 @@
+{
+  "book": "meditations",
+  "title": "Meditations",
+  "author": "Marcus Aurelius",
+  "model": "llama3:8b",
+  "seconds": 53.5,
+  "quiz": [
+    {
+      "question": "What was the primary influence on Marcus Aurelius' education?",
+      "options": [
+        "His grandfather, Annius Verus",
+        "The Emperor Hadrian",
+        "The Stoic philosophy",
+        "His parents"
+      ],
+      "answer": 2,
+      "explanation": "According to the passage, Marcus Aurelius was trained in the strict doctrine of the Stoic philosophy, which was his great delight."
+    },
+    {
+      "question": "What was the outcome of the wars fought during Marcus Aurelius' reign?",
+      "options": [
+        "The Romans were defeated",
+        "The Romans were victorious",
+        "The wars ended in a stalemate",
+        "The wars continued indefinitely"
+      ],
+      "answer": 1,
+      "explanation": "According to the passage, the Romans succeeded in crushing the barbarian tribes and effecting a settlement which made the empire more secure."
+    },
+    {
+      "question": "What was the reason for Marcus Aurelius' grief when he heard about Avidius Cassius' rebellion?",
+      "options": [
+        "He had to engage in civil strife",
+        "He had to face a new war",
+        "He had to deal with the aftermath of the rebellion",
+        "He had to mourn the loss of his wife, Faustina"
+      ],
+      "answer": 0,
+      "explanation": "According to the passage, Marcus Aurelius' grief was that he must needs engage in the horrors of civil strife."
+    },
+    {
+      "question": "What was the nature of the Roman religion, according to the passage?",
+      "options": [
+        "A moral code",
+        "A system of sacrifice and ritual",
+        "A philosophy of life",
+        "A form of mysticism"
+      ],
+      "answer": 1,
+      "explanation": "According to the passage, the Roman religion was of the nature of a bargain: men paid certain sacrifices and rites, and the gods granted their favour, irrespective of right or wrong."
+    },
+    {
+      "question": "What was the primary goal of the Stoic sect, according to the passage?",
+      "options": [
+        "To achieve ἁπάθεια",
+        "To achieve ἀταραξία",
+        "To live consistently",
+        "To live in conformity with nature"
+      ],
+      "answer": 3,
+      "explanation": "According to the passage, the primary goal of the Stoic sect was to live in conformity with nature, which was the Stoic idea of Virtue."
+    }
+  ]
+}
