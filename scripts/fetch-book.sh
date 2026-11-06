@@ -15,5 +15,6 @@ curl --fail --location --retry 3 --silent --show-error "$SOURCE_URL" -o "$tmp_fi
 
 # Normalize line endings while preserving the book's paragraph structure.
 tr -d '\r' < "$tmp_file" > "$OUTPUT_FILE"
+python3 scripts/build-book.py "$OUTPUT_FILE"
 
 printf 'Downloaded %s (%s bytes)\n' "$OUTPUT_FILE" "$(wc -c < "$OUTPUT_FILE" | tr -d ' ')"
