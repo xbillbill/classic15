@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fdfbf7" />
+  <title>Classic15 — The Autobiography of Benjamin Franklin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --paper:#fdfbf7; --ink:#253044; --muted:#68707d; --line:#e6e1d8; --accent:#a05c34; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); transition:background .25s,color .25s; }
+    body[data-theme="sepia"] { --paper:#f4ecd8; --ink:#4d3828; --muted:#806a56; --line:#ddcdb2; --accent:#9a5b36; }
+    body[data-theme="dark"] { --paper:#121212; --ink:#d1d5db; --muted:#9ca3af; --line:#303030; --accent:#d99a67; }
+    .reader { font-family: Georgia, 'Times New Roman', serif; font-size: var(--reader-size, 19px); line-height: var(--reader-leading, 1.8); }
+    .reader.sans { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .reader p { margin:0 0 1.35em; text-wrap:pretty; }
+    .reader h2 { font-size:1.45em; line-height:1.25; letter-spacing:-.02em; margin:3.1rem 0 1.2rem; }
+    .reader h3 { font-size:1em; font-weight:normal; font-style:italic; color:var(--muted); margin:2.2rem 0 1.1rem; }
+    .progress { transform-origin:left; transform:scaleX(0); }
+    header { transform:translateY(0); transition:transform .25s ease, opacity .25s ease; }
+    header.hidden-header { transform:translateY(-105%); opacity:0; }
+    .control { border:1px solid var(--line); background:color-mix(in srgb, var(--paper) 88%, var(--ink)); color:var(--ink); }
+    .control:hover, .control.active { border-color:var(--accent); color:var(--accent); }
+    .bottom-bar { background:color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter:blur(12px); border-top:1px solid var(--line); }
+    @media (max-width:640px) { .reader { font-size:var(--reader-size-mobile, 18px); } }
+  </style>
+</head>
+<body data-theme="light">
+  <div id="progressLine" class="progress fixed left-0 right-0 top-0 z-50 h-1 bg-[var(--accent)]"></div>
+  <header id="topbar" class="fixed left-0 right-0 top-0 z-40 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--paper)_92%,transparent)] backdrop-blur-md">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-4">
+      <button id="homeBtn" class="text-left" aria-label="Return to book beginning">
+        <div class="text-xs font-semibold uppercase tracking-[.2em] text-[var(--accent)]">Classic15</div>
+        <div class="hidden text-sm text-[var(--muted)] sm:block">The Autobiography of Benjamin Franklin</div>
+      </button>
+      <div class="flex items-center gap-2">
+        <button class="control rounded-full px-3 py-2 text-xs" data-action="font">A<span class="text-lg">A</span></button>
+        <button class="control rounded-full px-3 py-2 text-xs" data-action="theme">Theme</button>
+        <button class="control hidden rounded-full px-3 py-2 text-xs sm:block" data-action="fullscreen">Fullscreen</button>
+        <button id="settingsBtn" class="control rounded-full px-3 py-2 text-xs" aria-label="Open reading settings">⚙</button>
+      </div>
+    </div>
+    <div id="settings" class="hidden border-t border-[var(--line)] px-5 py-3">
+      <div class="mx-auto flex max-w-5xl flex-wrap items-center gap-4 text-sm">
+        <span class="font-semibold">Type</span>
+        <button class="control rounded px-2 py-1" data-font="serif">Serif</button>
+        <button class="control rounded px-2 py-1" data-font="sans">Sans</button>
+        <span class="ml-0 font-semibold sm:ml-3">Spacing</span>
+        <button class="control rounded px-2 py-1" data-leading="1.65">Compact</button>
+        <button class="control rounded px-2 py-1" data-leading="1.8">Relaxed</button>
+        <span id="savedLabel" class="ml-auto text-xs text-[var(--muted)]">Saved locally</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-6 pb-36 pt-32 sm:px-10">
+    <div class="mb-12 text-center">
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[.25em] text-[var(--accent)]">A daily reading practice</p>
+      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl">The Autobiography of<br class="hidden sm:block" /> Benjamin Franklin</h1>
+      <p class="mt-5 text-sm text-[var(--muted)]">Volume I of The Harvard Classics · 15-minute edition</p>
+    </div>
+    <article id="book" class="reader"></article>
+  </main>
+
+  <div class="bottom-bar fixed bottom-0 left-0 right-0 z-30 px-5 py-3 text-sm">
+    <div class="mx-auto flex max-w-3xl items-center gap-4">
+      <div class="min-w-0 flex-1">
+        <div class="mb-1 flex justify-between gap-3 text-xs font-semibold">
+          <span id="sectionLabel" class="truncate">Day 1</span>
+          <span id="progressLabel">0%</span>
+        </div>
+        <div class="h-1.5 overflow-hidden rounded-full bg-[var(--line)]"><div id="bar" class="h-full rounded-full bg-[var(--accent)] transition-[width] duration-150" style="width:0%"></div></div>
+      </div>
+      <div id="timeLabel" class="hidden whitespace-nowrap text-xs text-[var(--muted)] sm:block">15 min left</div>
+      <button id="completeBtn" class="control rounded-full px-3 py-2 text-xs whitespace-nowrap">Mark day done</button>
+    </div>
+  </div>
+
+  <script>
+    const sections = [
+      { day:1, title:'Early Life & Ancestry', text:[
+        `Dear son: I have ever had pleasure in obtaining any little anecdotes of my ancestors. You may remember the inquiries I made among such of them as were living when you were a boy, and the journey I undertook for that purpose. To be acquainted with the particulars of my parentage and life, many of which are omitted in the history of my country, may be agreeable to you.`,
+        `For this reason I shall commit the same to writing, that you may have them when you desire them. I shall relate them in the order in which they occurred, and shall not attempt to make them more polished than the truth requires.`,
+        `My grandfather Thomas, who lived at Ecton in Northamptonshire, was a smith and a man of sound understanding. He had four sons, who were all brought up to that trade; but my father, Josiah, learned the business of a tallow-chandler and soap-boiler. He married young, and in the year 1682 emigrated to New England, where he settled at Boston.`
+      ]},
+      { day:2, title:'Boston & the Printing Trade', text:[
+        `I was born in Boston, New England, and was brought up in my father's business, which was that of a tallow-chandler and soap-boiler. I was the youngest son of his youngest son for five generations back. My brothers were all put apprentice to different trades, but I was destined for the printing business.`,
+        `At twelve years old I was taken to my brother James, who was a printer. I served an apprenticeship to him till I was twenty-one years of age. He had begun to print a newspaper, the second that was published in America, and I secretly supplied pieces for it under the name of Silence Dogood.`,
+        `I had a great inclination for the sea, but my father declared against it. He wished me to be a printer, and I followed that occupation with diligence. Reading was the only amusement I allowed myself, and my early desire for books helped shape the whole course of my life.`
+      ]},
+      { day:3, title:'Philadelphia', text:[
+        `At length, in 1723, I left Boston and went to Philadelphia. I was in my working dress, my best clothes being in my chest. I had three great puffy rolls of bread under my arms, and walked towards Market Street, looking about for a place where I might obtain employment.`,
+        `I was fatigued with travelling, rowing, and want of rest, and went into a shop where I saw a young man at work. He asked me if I could get a job. I answered that I could, and was soon engaged. My brother-in-law, who lived in Philadelphia, received me kindly, and I found a new home among strangers.`,
+        `The city was then small, but active. Its inhabitants were industrious and diverse, and I found there a spirit of improvement that suited my temper. I began to form acquaintances, observe men and manners, and consider how a young man might establish himself by frugality and steady labor.`
+      ]},
+      { day:4, title:'Industry & Improvement', text:[
+        `I conceived the bold and arduous project of arriving at moral perfection. I wished to live without committing any fault at any time, and to conquer all that either natural inclination, custom, or company might lead me into. I soon found I had undertaken a task of more difficulty than I had imagined.`,
+        `My method was to divide the day into portions: a question in the morning, “What good shall I do this day?”; and in the evening, “What good have I done today?” I made a little book in which I allotted a page for each virtue, marking every fault I found upon examination.`,
+        `Though I never arrived at the perfection I had been so ambitious of obtaining, I was, by the endeavor, a better and happier man than I otherwise should have been. It is good to be humble about progress, but it is also good to make progress a daily practice.`
+      ]}
+    ];
+    const KEY='classic15-state-v1';
+    const state=Object.assign({theme:'light',size:19,leading:1.8,font:'serif',scroll:0,section:0,done:[]}, JSON.parse(localStorage.getItem(KEY)||'{}'));
+    const $=s=>document.querySelector(s), book=$('#book');
+    sections.forEach((s,i)=>{ const el=document.createElement('section'); el.id='day-'+s.day; el.dataset.day=i; el.innerHTML=`<h2>Day ${s.day}: ${s.title}</h2>${s.text.map((p,j)=>j===0?`<p>${p}</p>`:`<p>${p}</p>`).join('')}`; book.appendChild(el); });
+    function save(){ state.scroll=scrollY; localStorage.setItem(KEY,JSON.stringify(state)); }
+    function apply(){ document.body.dataset.theme=state.theme; document.documentElement.style.setProperty('--reader-size',state.size+'px'); document.documentElement.style.setProperty('--reader-leading',state.leading); book.classList.toggle('sans',state.font==='sans'); }
+    function update(){ const max=document.documentElement.scrollHeight-innerHeight; const pct=max?Math.min(100,Math.max(0,scrollY/max*100)):0; $('.progress').style.transform=`scaleX(${pct/100})`; $('#bar').style.width=pct+'%'; $('#progressLabel').textContent=Math.round(pct)+'%'; const visible=[...book.querySelectorAll('section')].reduce((a,e)=>e.getBoundingClientRect().top<innerHeight*.4?e:a,null); if(visible){state.section=+visible.dataset.day; const s=sections[state.section]; $('#sectionLabel').textContent=`Day ${s.day}: ${s.title}`;} $('#timeLabel').textContent=Math.max(0,Math.ceil(15*(1-pct/100)))+' min left'; }
+    function theme(){ state.theme=state.theme==='light'?'sepia':state.theme==='sepia'?'dark':'light'; apply(); save(); }
+    document.addEventListener('click',e=>{ const a=e.target.closest('[data-action]'); if(a){if(a.dataset.action==='theme')theme(); if(a.dataset.action==='font'){state.size=state.size>=24?16:state.size+2;apply();save();} if(a.dataset.action==='fullscreen')document.documentElement.requestFullscreen?.();} const f=e.target.closest('[data-font]'); if(f){state.font=f.dataset.font;apply();save();} const l=e.target.closest('[data-leading]'); if(l){state.leading=l.dataset.leading;apply();save();} });
+    $('#settingsBtn').onclick=()=>$('#settings').classList.toggle('hidden'); $('#homeBtn').onclick=()=>scrollTo({top:0,behavior:'smooth'}); $('#completeBtn').onclick=()=>{if(!state.done.includes(state.section))state.done.push(state.section);save();$('#completeBtn').textContent='Day completed ✓';};
+    let lastY=scrollY; addEventListener('scroll',()=>{ update(); save(); if(scrollY>lastY+8 && scrollY>120)$('#topbar').classList.add('hidden-header'); if(scrollY<lastY-8)$('#topbar').classList.remove('hidden-header'); lastY=scrollY;},{passive:true});
+    addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return; if(e.key==='t'||e.key==='T')theme(); if(e.key==='f'||e.key==='F')document.documentElement.requestFullscreen?.(); if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();scrollBy({top:innerHeight*.82,behavior:'smooth'});} if(e.key==='ArrowLeft'){e.preventDefault();scrollBy({top:-innerHeight*.82,behavior:'smooth'});}});
+    apply(); addEventListener('load',()=>{scrollTo(0,state.scroll);update();}); update();
+  </script>
+</body>
+</html>
