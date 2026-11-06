@@ -1,0 +1,788 @@
+{
+  "book": "republic",
+  "title": "The Republic",
+  "author": "Plato",
+  "totalDays": 130,
+  "sections": [
+    {
+      "day": 1,
+      "title": "Reading 1",
+      "url": "chunks/day-01.json",
+      "words": 1580
+    },
+    {
+      "day": 2,
+      "title": "Reading 2",
+      "url": "chunks/day-02.json",
+      "words": 1477
+    },
+    {
+      "day": 3,
+      "title": "Reading 3",
+      "url": "chunks/day-03.json",
+      "words": 1739
+    },
+    {
+      "day": 4,
+      "title": "Reading 4",
+      "url": "chunks/day-04.json",
+      "words": 1780
+    },
+    {
+      "day": 5,
+      "title": "Reading 5",
+      "url": "chunks/day-05.json",
+      "words": 1793
+    },
+    {
+      "day": 6,
+      "title": "Reading 6",
+      "url": "chunks/day-06.json",
+      "words": 1693
+    },
+    {
+      "day": 7,
+      "title": "Reading 7",
+      "url": "chunks/day-07.json",
+      "words": 1565
+    },
+    {
+      "day": 8,
+      "title": "Reading 8",
+      "url": "chunks/day-08.json",
+      "words": 1747
+    },
+    {
+      "day": 9,
+      "title": "Reading 9",
+      "url": "chunks/day-09.json",
+      "words": 1656
+    },
+    {
+      "day": 10,
+      "title": "Reading 10",
+      "url": "chunks/day-10.json",
+      "words": 1767
+    },
+    {
+      "day": 11,
+      "title": "Reading 11",
+      "url": "chunks/day-11.json",
+      "words": 1595
+    },
+    {
+      "day": 12,
+      "title": "Reading 12",
+      "url": "chunks/day-12.json",
+      "words": 1720
+    },
+    {
+      "day": 13,
+      "title": "Reading 13",
+      "url": "chunks/day-13.json",
+      "words": 1649
+    },
+    {
+      "day": 14,
+      "title": "Reading 14",
+      "url": "chunks/day-14.json",
+      "words": 1579
+    },
+    {
+      "day": 15,
+      "title": "Reading 15",
+      "url": "chunks/day-15.json",
+      "words": 1645
+    },
+    {
+      "day": 16,
+      "title": "Reading 16",
+      "url": "chunks/day-16.json",
+      "words": 1723
+    },
+    {
+      "day": 17,
+      "title": "Reading 17",
+      "url": "chunks/day-17.json",
+      "words": 1662
+    },
+    {
+      "day": 18,
+      "title": "Reading 18",
+      "url": "chunks/day-18.json",
+      "words": 1442
+    },
+    {
+      "day": 19,
+      "title": "Reading 19",
+      "url": "chunks/day-19.json",
+      "words": 1725
+    },
+    {
+      "day": 20,
+      "title": "Reading 20",
+      "url": "chunks/day-20.json",
+      "words": 1638
+    },
+    {
+      "day": 21,
+      "title": "Reading 21",
+      "url": "chunks/day-21.json",
+      "words": 1267
+    },
+    {
+      "day": 22,
+      "title": "Reading 22",
+      "url": "chunks/day-22.json",
+      "words": 1701
+    },
+    {
+      "day": 23,
+      "title": "Reading 23",
+      "url": "chunks/day-23.json",
+      "words": 1794
+    },
+    {
+      "day": 24,
+      "title": "Reading 24",
+      "url": "chunks/day-24.json",
+      "words": 1743
+    },
+    {
+      "day": 25,
+      "title": "Reading 25",
+      "url": "chunks/day-25.json",
+      "words": 1637
+    },
+    {
+      "day": 26,
+      "title": "Reading 26",
+      "url": "chunks/day-26.json",
+      "words": 1462
+    },
+    {
+      "day": 27,
+      "title": "Reading 27",
+      "url": "chunks/day-27.json",
+      "words": 1797
+    },
+    {
+      "day": 28,
+      "title": "Reading 28",
+      "url": "chunks/day-28.json",
+      "words": 1569
+    },
+    {
+      "day": 29,
+      "title": "Reading 29",
+      "url": "chunks/day-29.json",
+      "words": 1618
+    },
+    {
+      "day": 30,
+      "title": "Reading 30",
+      "url": "chunks/day-30.json",
+      "words": 1454
+    },
+    {
+      "day": 31,
+      "title": "Reading 31",
+      "url": "chunks/day-31.json",
+      "words": 1490
+    },
+    {
+      "day": 32,
+      "title": "Reading 32",
+      "url": "chunks/day-32.json",
+      "words": 1095
+    },
+    {
+      "day": 33,
+      "title": "Reading 33",
+      "url": "chunks/day-33.json",
+      "words": 1584
+    },
+    {
+      "day": 34,
+      "title": "Reading 34",
+      "url": "chunks/day-34.json",
+      "words": 1673
+    },
+    {
+      "day": 35,
+      "title": "Reading 35",
+      "url": "chunks/day-35.json",
+      "words": 1791
+    },
+    {
+      "day": 36,
+      "title": "Reading 36",
+      "url": "chunks/day-36.json",
+      "words": 1778
+    },
+    {
+      "day": 37,
+      "title": "Reading 37",
+      "url": "chunks/day-37.json",
+      "words": 1602
+    },
+    {
+      "day": 38,
+      "title": "Reading 38",
+      "url": "chunks/day-38.json",
+      "words": 1509
+    },
+    {
+      "day": 39,
+      "title": "Reading 39",
+      "url": "chunks/day-39.json",
+      "words": 1679
+    },
+    {
+      "day": 40,
+      "title": "Reading 40",
+      "url": "chunks/day-40.json",
+      "words": 1340
+    },
+    {
+      "day": 41,
+      "title": "Reading 41",
+      "url": "chunks/day-41.json",
+      "words": 1738
+    },
+    {
+      "day": 42,
+      "title": "Reading 42",
+      "url": "chunks/day-42.json",
+      "words": 1612
+    },
+    {
+      "day": 43,
+      "title": "Reading 43",
+      "url": "chunks/day-43.json",
+      "words": 1586
+    },
+    {
+      "day": 44,
+      "title": "Reading 44",
+      "url": "chunks/day-44.json",
+      "words": 1688
+    },
+    {
+      "day": 45,
+      "title": "Reading 45",
+      "url": "chunks/day-45.json",
+      "words": 1608
+    },
+    {
+      "day": 46,
+      "title": "Reading 46",
+      "url": "chunks/day-46.json",
+      "words": 1603
+    },
+    {
+      "day": 47,
+      "title": "Reading 47",
+      "url": "chunks/day-47.json",
+      "words": 1704
+    },
+    {
+      "day": 48,
+      "title": "Reading 48",
+      "url": "chunks/day-48.json",
+      "words": 1577
+    },
+    {
+      "day": 49,
+      "title": "Reading 49",
+      "url": "chunks/day-49.json",
+      "words": 1571
+    },
+    {
+      "day": 50,
+      "title": "Reading 50",
+      "url": "chunks/day-50.json",
+      "words": 1386
+    },
+    {
+      "day": 51,
+      "title": "Reading 51",
+      "url": "chunks/day-51.json",
+      "words": 1516
+    },
+    {
+      "day": 52,
+      "title": "Reading 52",
+      "url": "chunks/day-52.json",
+      "words": 1508
+    },
+    {
+      "day": 53,
+      "title": "Reading 53",
+      "url": "chunks/day-53.json",
+      "words": 1712
+    },
+    {
+      "day": 54,
+      "title": "Reading 54",
+      "url": "chunks/day-54.json",
+      "words": 1680
+    },
+    {
+      "day": 55,
+      "title": "Reading 55",
+      "url": "chunks/day-55.json",
+      "words": 1607
+    },
+    {
+      "day": 56,
+      "title": "Reading 56",
+      "url": "chunks/day-56.json",
+      "words": 1786
+    },
+    {
+      "day": 57,
+      "title": "Reading 57",
+      "url": "chunks/day-57.json",
+      "words": 1638
+    },
+    {
+      "day": 58,
+      "title": "Reading 58",
+      "url": "chunks/day-58.json",
+      "words": 1520
+    },
+    {
+      "day": 59,
+      "title": "Reading 59",
+      "url": "chunks/day-59.json",
+      "words": 1457
+    },
+    {
+      "day": 60,
+      "title": "Reading 60",
+      "url": "chunks/day-60.json",
+      "words": 1558
+    },
+    {
+      "day": 61,
+      "title": "Reading 61",
+      "url": "chunks/day-61.json",
+      "words": 1709
+    },
+    {
+      "day": 62,
+      "title": "Reading 62",
+      "url": "chunks/day-62.json",
+      "words": 1795
+    },
+    {
+      "day": 63,
+      "title": "Reading 63",
+      "url": "chunks/day-63.json",
+      "words": 1735
+    },
+    {
+      "day": 64,
+      "title": "Reading 64",
+      "url": "chunks/day-64.json",
+      "words": 1800
+    },
+    {
+      "day": 65,
+      "title": "Reading 65",
+      "url": "chunks/day-65.json",
+      "words": 1251
+    },
+    {
+      "day": 66,
+      "title": "Reading 66",
+      "url": "chunks/day-66.json",
+      "words": 1770
+    },
+    {
+      "day": 67,
+      "title": "Reading 67",
+      "url": "chunks/day-67.json",
+      "words": 1797
+    },
+    {
+      "day": 68,
+      "title": "Reading 68",
+      "url": "chunks/day-68.json",
+      "words": 1793
+    },
+    {
+      "day": 69,
+      "title": "Reading 69",
+      "url": "chunks/day-69.json",
+      "words": 1448
+    },
+    {
+      "day": 70,
+      "title": "Reading 70",
+      "url": "chunks/day-70.json",
+      "words": 1772
+    },
+    {
+      "day": 71,
+      "title": "Reading 71",
+      "url": "chunks/day-71.json",
+      "words": 1799
+    },
+    {
+      "day": 72,
+      "title": "Reading 72",
+      "url": "chunks/day-72.json",
+      "words": 1663
+    },
+    {
+      "day": 73,
+      "title": "Reading 73",
+      "url": "chunks/day-73.json",
+      "words": 1796
+    },
+    {
+      "day": 74,
+      "title": "Reading 74",
+      "url": "chunks/day-74.json",
+      "words": 1794
+    },
+    {
+      "day": 75,
+      "title": "Reading 75",
+      "url": "chunks/day-75.json",
+      "words": 1792
+    },
+    {
+      "day": 76,
+      "title": "Reading 76",
+      "url": "chunks/day-76.json",
+      "words": 1793
+    },
+    {
+      "day": 77,
+      "title": "Reading 77",
+      "url": "chunks/day-77.json",
+      "words": 1752
+    },
+    {
+      "day": 78,
+      "title": "Reading 78",
+      "url": "chunks/day-78.json",
+      "words": 1794
+    },
+    {
+      "day": 79,
+      "title": "Reading 79",
+      "url": "chunks/day-79.json",
+      "words": 1756
+    },
+    {
+      "day": 80,
+      "title": "Reading 80",
+      "url": "chunks/day-80.json",
+      "words": 1759
+    },
+    {
+      "day": 81,
+      "title": "Reading 81",
+      "url": "chunks/day-81.json",
+      "words": 1779
+    },
+    {
+      "day": 82,
+      "title": "Reading 82",
+      "url": "chunks/day-82.json",
+      "words": 1577
+    },
+    {
+      "day": 83,
+      "title": "Reading 83",
+      "url": "chunks/day-83.json",
+      "words": 1240
+    },
+    {
+      "day": 84,
+      "title": "Reading 84",
+      "url": "chunks/day-84.json",
+      "words": 1754
+    },
+    {
+      "day": 85,
+      "title": "Reading 85",
+      "url": "chunks/day-85.json",
+      "words": 1800
+    },
+    {
+      "day": 86,
+      "title": "Reading 86",
+      "url": "chunks/day-86.json",
+      "words": 1783
+    },
+    {
+      "day": 87,
+      "title": "Reading 87",
+      "url": "chunks/day-87.json",
+      "words": 1798
+    },
+    {
+      "day": 88,
+      "title": "Reading 88",
+      "url": "chunks/day-88.json",
+      "words": 1779
+    },
+    {
+      "day": 89,
+      "title": "Reading 89",
+      "url": "chunks/day-89.json",
+      "words": 1777
+    },
+    {
+      "day": 90,
+      "title": "Reading 90",
+      "url": "chunks/day-90.json",
+      "words": 1783
+    },
+    {
+      "day": 91,
+      "title": "Reading 91",
+      "url": "chunks/day-91.json",
+      "words": 1800
+    },
+    {
+      "day": 92,
+      "title": "Reading 92",
+      "url": "chunks/day-92.json",
+      "words": 1788
+    },
+    {
+      "day": 93,
+      "title": "Reading 93",
+      "url": "chunks/day-93.json",
+      "words": 1800
+    },
+    {
+      "day": 94,
+      "title": "Reading 94",
+      "url": "chunks/day-94.json",
+      "words": 1771
+    },
+    {
+      "day": 95,
+      "title": "Reading 95",
+      "url": "chunks/day-95.json",
+      "words": 1739
+    },
+    {
+      "day": 96,
+      "title": "Reading 96",
+      "url": "chunks/day-96.json",
+      "words": 1789
+    },
+    {
+      "day": 97,
+      "title": "Reading 97",
+      "url": "chunks/day-97.json",
+      "words": 1789
+    },
+    {
+      "day": 98,
+      "title": "Reading 98",
+      "url": "chunks/day-98.json",
+      "words": 1740
+    },
+    {
+      "day": 99,
+      "title": "Reading 99",
+      "url": "chunks/day-99.json",
+      "words": 1775
+    },
+    {
+      "day": 100,
+      "title": "Reading 100",
+      "url": "chunks/day-100.json",
+      "words": 1725
+    },
+    {
+      "day": 101,
+      "title": "Reading 101",
+      "url": "chunks/day-101.json",
+      "words": 1778
+    },
+    {
+      "day": 102,
+      "title": "Reading 102",
+      "url": "chunks/day-102.json",
+      "words": 1784
+    },
+    {
+      "day": 103,
+      "title": "Reading 103",
+      "url": "chunks/day-103.json",
+      "words": 1776
+    },
+    {
+      "day": 104,
+      "title": "Reading 104",
+      "url": "chunks/day-104.json",
+      "words": 1737
+    },
+    {
+      "day": 105,
+      "title": "Reading 105",
+      "url": "chunks/day-105.json",
+      "words": 1705
+    },
+    {
+      "day": 106,
+      "title": "Reading 106",
+      "url": "chunks/day-106.json",
+      "words": 1794
+    },
+    {
+      "day": 107,
+      "title": "Reading 107",
+      "url": "chunks/day-107.json",
+      "words": 1794
+    },
+    {
+      "day": 108,
+      "title": "Reading 108",
+      "url": "chunks/day-108.json",
+      "words": 1787
+    },
+    {
+      "day": 109,
+      "title": "Reading 109",
+      "url": "chunks/day-109.json",
+      "words": 1755
+    },
+    {
+      "day": 110,
+      "title": "Reading 110",
+      "url": "chunks/day-110.json",
+      "words": 1790
+    },
+    {
+      "day": 111,
+      "title": "Reading 111",
+      "url": "chunks/day-111.json",
+      "words": 1633
+    },
+    {
+      "day": 112,
+      "title": "Reading 112",
+      "url": "chunks/day-112.json",
+      "words": 1785
+    },
+    {
+      "day": 113,
+      "title": "Reading 113",
+      "url": "chunks/day-113.json",
+      "words": 1789
+    },
+    {
+      "day": 114,
+      "title": "Reading 114",
+      "url": "chunks/day-114.json",
+      "words": 1721
+    },
+    {
+      "day": 115,
+      "title": "Reading 115",
+      "url": "chunks/day-115.json",
+      "words": 1790
+    },
+    {
+      "day": 116,
+      "title": "Reading 116",
+      "url": "chunks/day-116.json",
+      "words": 1800
+    },
+    {
+      "day": 117,
+      "title": "Reading 117",
+      "url": "chunks/day-117.json",
+      "words": 1755
+    },
+    {
+      "day": 118,
+      "title": "Reading 118",
+      "url": "chunks/day-118.json",
+      "words": 1762
+    },
+    {
+      "day": 119,
+      "title": "Reading 119",
+      "url": "chunks/day-119.json",
+      "words": 1736
+    },
+    {
+      "day": 120,
+      "title": "Reading 120",
+      "url": "chunks/day-120.json",
+      "words": 1753
+    },
+    {
+      "day": 121,
+      "title": "Reading 121",
+      "url": "chunks/day-121.json",
+      "words": 1780
+    },
+    {
+      "day": 122,
+      "title": "Reading 122",
+      "url": "chunks/day-122.json",
+      "words": 1789
+    },
+    {
+      "day": 123,
+      "title": "Reading 123",
+      "url": "chunks/day-123.json",
+      "words": 1775
+    },
+    {
+      "day": 124,
+      "title": "Reading 124",
+      "url": "chunks/day-124.json",
+      "words": 1793
+    },
+    {
+      "day": 125,
+      "title": "Reading 125",
+      "url": "chunks/day-125.json",
+      "words": 1670
+    },
+    {
+      "day": 126,
+      "title": "Reading 126",
+      "url": "chunks/day-126.json",
+      "words": 1672
+    },
+    {
+      "day": 127,
+      "title": "Reading 127",
+      "url": "chunks/day-127.json",
+      "words": 1101
+    },
+    {
+      "day": 128,
+      "title": "Reading 128",
+      "url": "chunks/day-128.json",
+      "words": 1499
+    },
+    {
+      "day": 129,
+      "title": "Reading 129",
+      "url": "chunks/day-129.json",
+      "words": 1678
+    },
+    {
+      "day": 130,
+      "title": "Reading 130",
+      "url": "chunks/day-130.json",
+      "words": 137
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "book": "poetics",
+  "title": "Poetics",
+  "author": "Aristotle",
+  "totalDays": 9,
+  "sections": [
+    {
+      "day": 1,
+      "title": "Reading 1",
+      "url": "chunks/day-01.json",
+      "words": 1674
+    },
+    {
+      "day": 2,
+      "title": "Reading 2",
+      "url": "chunks/day-02.json",
+      "words": 1783
+    },
+    {
+      "day": 3,
+      "title": "Reading 3",
+      "url": "chunks/day-03.json",
+      "words": 1752
+    },
+    {
+      "day": 4,
+      "title": "Reading 4",
+      "url": "chunks/day-04.json",
+      "words": 1702
+    },
+    {
+      "day": 5,
+      "title": "Reading 5",
+      "url": "chunks/day-05.json",
+      "words": 1694
+    },
+    {
+      "day": 6,
+      "title": "Reading 6",
+      "url": "chunks/day-06.json",
+      "words": 1777
+    },
+    {
+      "day": 7,
+      "title": "Reading 7",
+      "url": "chunks/day-07.json",
+      "words": 1770
+    },
+    {
+      "day": 8,
+      "title": "Reading 8",
+      "url": "chunks/day-08.json",
+      "words": 1787
+    },
+    {
+      "day": 9,
+      "title": "Reading 9",
+      "url": "chunks/day-09.json",
+      "words": 1249
+    }
+  ]
+}

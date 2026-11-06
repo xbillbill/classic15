@@ -1,0 +1,182 @@
+{
+  "book": "utopia",
+  "title": "Utopia",
+  "author": "Thomas More",
+  "totalDays": 29,
+  "sections": [
+    {
+      "day": 1,
+      "title": "Reading 1",
+      "url": "chunks/day-01.json",
+      "words": 1379
+    },
+    {
+      "day": 2,
+      "title": "Reading 2",
+      "url": "chunks/day-02.json",
+      "words": 1563
+    },
+    {
+      "day": 3,
+      "title": "Reading 3",
+      "url": "chunks/day-03.json",
+      "words": 1095
+    },
+    {
+      "day": 4,
+      "title": "Reading 4",
+      "url": "chunks/day-04.json",
+      "words": 2437
+    },
+    {
+      "day": 5,
+      "title": "Reading 5",
+      "url": "chunks/day-05.json",
+      "words": 1556
+    },
+    {
+      "day": 6,
+      "title": "Reading 6",
+      "url": "chunks/day-06.json",
+      "words": 1800
+    },
+    {
+      "day": 7,
+      "title": "Reading 7",
+      "url": "chunks/day-07.json",
+      "words": 900
+    },
+    {
+      "day": 8,
+      "title": "Reading 8",
+      "url": "chunks/day-08.json",
+      "words": 1448
+    },
+    {
+      "day": 9,
+      "title": "Reading 9",
+      "url": "chunks/day-09.json",
+      "words": 1182
+    },
+    {
+      "day": 10,
+      "title": "Reading 10",
+      "url": "chunks/day-10.json",
+      "words": 1504
+    },
+    {
+      "day": 11,
+      "title": "Reading 11",
+      "url": "chunks/day-11.json",
+      "words": 1324
+    },
+    {
+      "day": 12,
+      "title": "Reading 12",
+      "url": "chunks/day-12.json",
+      "words": 1744
+    },
+    {
+      "day": 13,
+      "title": "Reading 13",
+      "url": "chunks/day-13.json",
+      "words": 1579
+    },
+    {
+      "day": 14,
+      "title": "Reading 14",
+      "url": "chunks/day-14.json",
+      "words": 1763
+    },
+    {
+      "day": 15,
+      "title": "Reading 15",
+      "url": "chunks/day-15.json",
+      "words": 1422
+    },
+    {
+      "day": 16,
+      "title": "Reading 16",
+      "url": "chunks/day-16.json",
+      "words": 1349
+    },
+    {
+      "day": 17,
+      "title": "Reading 17",
+      "url": "chunks/day-17.json",
+      "words": 1709
+    },
+    {
+      "day": 18,
+      "title": "Reading 18",
+      "url": "chunks/day-18.json",
+      "words": 1314
+    },
+    {
+      "day": 19,
+      "title": "Reading 19",
+      "url": "chunks/day-19.json",
+      "words": 1348
+    },
+    {
+      "day": 20,
+      "title": "Reading 20",
+      "url": "chunks/day-20.json",
+      "words": 1530
+    },
+    {
+      "day": 21,
+      "title": "Reading 21",
+      "url": "chunks/day-21.json",
+      "words": 1772
+    },
+    {
+      "day": 22,
+      "title": "Reading 22",
+      "url": "chunks/day-22.json",
+      "words": 1436
+    },
+    {
+      "day": 23,
+      "title": "Reading 23",
+      "url": "chunks/day-23.json",
+      "words": 1436
+    },
+    {
+      "day": 24,
+      "title": "Reading 24",
+      "url": "chunks/day-24.json",
+      "words": 1497
+    },
+    {
+      "day": 25,
+      "title": "Reading 25",
+      "url": "chunks/day-25.json",
+      "words": 1643
+    },
+    {
+      "day": 26,
+      "title": "Reading 26",
+      "url": "chunks/day-26.json",
+      "words": 1654
+    },
+    {
+      "day": 27,
+      "title": "Reading 27",
+      "url": "chunks/day-27.json",
+      "words": 1726
+    },
+    {
+      "day": 28,
+      "title": "Reading 28",
+      "url": "chunks/day-28.json",
+      "words": 1783
+    },
+    {
+      "day": 29,
+      "title": "Reading 29",
+      "url": "chunks/day-29.json",
+      "words": 632
+    }
+  ]
+}
