@@ -1,0 +1,13 @@
+[
+  {"id":"franklin","title":"The Autobiography of Benjamin Franklin","author":"Benjamin Franklin","volume":"I","description":"A life shaped by curiosity, work, and self-improvement.","manifest":"content/manifest.json","color":"#a05c34"},
+  {"id":"republic","title":"The Republic","author":"Plato","volume":"II","description":"A foundational conversation about justice, education, and the ideal state.","source":"1497","color":"#6b7280"},
+  {"id":"meditations","title":"Meditations","author":"Marcus Aurelius","volume":"II","description":"Stoic reflections on character, duty, and living well.","source":"2680","color":"#475569"},
+  {"id":"utopia","title":"Utopia","author":"Thomas More","volume":"II","description":"A philosophical travel story about society, labor, and power.","source":"2130","color":"#7c5c42"},
+  {"id":"prince","title":"The Prince","author":"Niccolò Machiavelli","volume":"XXXVI","description":"A sharp study of power, leadership, and political fortune.","source":"1232","color":"#8f3d32"},
+  {"id":"essays-montaigne","title":"Essays","author":"Michel de Montaigne","volume":"XXXII","description":"Personal essays on habit, judgment, friendship, and human nature.","source":"3600","color":"#96734f"},
+  {"id":"confessions","title":"The Confessions","author":"Saint Augustine","volume":"XXVII","description":"A searching spiritual autobiography about memory, desire, and grace.","source":"3296","color":"#6d597a"},
+  {"id":"odyssey","title":"The Odyssey","author":"Homer","volume":"XXII","description":"An epic journey home through danger, disguise, and recognition.","source":"1727","color":"#3f6c7d"},
+  {"id":"aeneid","title":"The Aeneid","author":"Virgil","volume":"XXI","description":"A founding epic of exile, duty, sacrifice, and destiny.","source":"228","color":"#7b5946"},
+  {"id":"poetics","title":"Poetics","author":"Aristotle","volume":"XXII","description":"A compact investigation of tragedy, plot, character, and imitation.","source":"1974","color":"#4f6472"},
+  {"id":"walden","title":"Walden","author":"Henry David Thoreau","volume":"XXVIII","description":"An experiment in deliberate living, work, nature, and attention.","source":"205","color":"#57745d"}
+]
