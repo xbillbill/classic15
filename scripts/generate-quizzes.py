@@ -8,7 +8,7 @@ MODEL = "gemma4:e2b-nvfp4"
 def ask(passage, day):
     prompt = f'''You are writing a serious but engaging reading quiz for Day {day} of Benjamin Franklin's autobiography. Create exactly five questions that test understanding, not sentence matching. Use a mix of: central idea, motivation, cause and effect, chronology, inference, and evidence. Every option must be plausible, only one answer may be correct, and the explanation must cite the passage's reasoning. Return ONLY a JSON array, with no markdown or commentary. Each object must have exactly these keys: question, options (4 strings), answer (integer 0-3), explanation.\n\nPASSAGE:\n{passage}'''
     for _ in range(3):
-        body = json.dumps({"model": MODEL, "prompt": prompt, "stream": False, "options": {"temperature": 0.1, "num_predict": 2200}}).encode()
+        body = json.dumps({"model": MODEL, "prompt": prompt, "stream": False, "format": "json", "options": {"temperature": 0.1, "num_predict": 2600}}).encode()
         request = urllib.request.Request("http://127.0.0.1:11434/api/generate", data=body, headers={"Content-Type":"application/json"})
         with urllib.request.urlopen(request, timeout=240) as response:
             raw = json.loads(response.read()).get("response", "")
