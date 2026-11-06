@@ -23,7 +23,7 @@ def generate(path):
             try:
                 body=json.dumps({'model':model,'prompt':prompt,'stream':False,'format':'json','options':{'temperature':.1,'num_predict':1200}}).encode()
                 req=urllib.request.Request('http://127.0.0.1:11434/api/generate',data=body,headers={'Content-Type':'application/json'})
-                with urllib.request.urlopen(req,timeout=90) as r: raw=json.loads(r.read()).get('response','')
+                with urllib.request.urlopen(req,timeout=30) as r: raw=json.loads(r.read()).get('response','')
                 obj=json.loads(raw); quiz=obj.get('questions',obj) if isinstance(obj,dict) else obj
                 if isinstance(quiz,list) and len(quiz)==5 and all(len(q.get('options',[]))==4 and isinstance(q.get('answer'),int) and 0<=q['answer']<4 and q.get('explanation') for q in quiz):
                     d['quiz']=quiz; d['quizModel']=model; d['quizSeconds']=round(time.time()-started,1); Path(path).write_text(json.dumps(d,ensure_ascii=False),encoding='utf-8'); return path,model,d['quizSeconds'],None
