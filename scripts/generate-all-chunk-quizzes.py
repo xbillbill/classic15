@@ -25,5 +25,5 @@ def generate(path):
 def work(path):
     return generate(path)
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
     for path,model,seconds,error in pool.map(work,files): print(f'{path}: {model or "FAILED"} {seconds}s {error or ""}',flush=True)
