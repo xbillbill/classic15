@@ -3,7 +3,7 @@
 import json, re, urllib.request, time
 from pathlib import Path
 
-MODELS = ["gemma4:e2b-nvfp4", "llama3:8b", "qwen2.5-coder:7b-instruct-q4_K_M"]
+MODELS = ["qwen2.5-coder:7b-instruct-q4_K_M", "gemma4:e2b-nvfp4", "llama3:8b"]
 
 def ask(passage, day):
     prompt = f'''You are writing a serious but engaging reading quiz for Day {day} of Benjamin Franklin's autobiography. Create exactly five questions that test understanding, not sentence matching. Use a mix of: central idea, motivation, cause and effect, chronology, inference, and evidence. Every option must be plausible, only one answer may be correct, and the explanation must cite the passage's reasoning. Return ONLY a JSON array, with no markdown or commentary. Each object must have exactly these keys: question, options (4 strings), answer (integer 0-3), explanation.\n\nPASSAGE:\n{passage}'''
