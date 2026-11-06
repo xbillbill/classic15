@@ -88,7 +88,7 @@
 
   <script>
     let sections=[]; let loading=false; let bookQuiz=[]; const bookId=new URLSearchParams(location.search).get('book')||'franklin'; let bookMeta;
-    const KEY='classic15-state-v1';
+    const KEY=`classic15-state-v1-${bookId}`;
     const state=Object.assign({theme:'light',size:19,leading:1.8,font:'serif',scroll:0,section:0,done:[]}, JSON.parse(localStorage.getItem(KEY)||'{}'));
     const $=s=>document.querySelector(s), book=$('#book');
     async function loadManifest(){ const catalog=await fetch('content/books.json').then(r=>r.json()); bookMeta=catalog.find(b=>b.id===bookId)||catalog[0]; const data=await fetch(bookMeta.manifest||'content/manifest.json').then(r=>r.json()); sections=data.sections; if(bookId!=='franklin'){bookQuiz=(await fetch(`content/books/${bookId}/quiz.json`).then(r=>r.json())).quiz||[];} document.title=`Classic15 — ${bookMeta.title}`; document.querySelector('h1').innerHTML=bookMeta.title; document.querySelector('header .text-sm').textContent=`${bookMeta.author} · Volume ${bookMeta.volume}`; await loadSection(state.section); update(); }
