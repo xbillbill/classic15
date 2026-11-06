@@ -2,19 +2,19 @@
 import concurrent.futures, glob, json, re, time, urllib.request
 from pathlib import Path
 
-MODELS=['gemma4:e2b-nvfp4','llama3:8b','qwen2.5vl:3b']
+MODELS=['gemma4:e2b-nvfp4','qwen2.5vl:3b']
 files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
 files=[f for f in files if len(json.load(open(f)).get('quiz',[]))!=5]
 
 def generate(path):
-    d=json.load(open(path)); passage='\n\n'.join(d.get('paragraphs',[])); passage=passage[:3600]
+    d=json.load(open(path)); passage='\n\n'.join(d.get('paragraphs',[])); passage=passage[:1800]
     prompt=f'''Return ONLY valid JSON in this exact shape: {{"questions":[five objects]}}. The questions array must contain exactly 5 engaging comprehension questions about this reading chunk. Test main idea, motivation, cause/effect, sequence, inference, or evidence. Do not ask whether a sentence appeared. Each object must have question, options (exactly 4 strings), answer (integer 0-3), explanation. Base every question on the passage.\n\n{passage}'''
     for model in MODELS:
         for attempt in range(2):
             try:
-                body=json.dumps({'model':model,'prompt':prompt,'stream':False,'format':'json','options':{'temperature':.1,'num_predict':1400}}).encode()
+                body=json.dumps({'model':model,'prompt':prompt,'stream':False,'format':'json','options':{'temperature':.1,'num_predict':1200}}).encode()
                 req=urllib.request.Request('http://127.0.0.1:11434/api/generate',data=body,headers={'Content-Type':'application/json'})
-                with urllib.request.urlopen(req,timeout=180) as r: raw=json.loads(r.read()).get('response','')
+                with urllib.request.urlopen(req,timeout=90) as r: raw=json.loads(r.read()).get('response','')
                 obj=json.loads(raw); quiz=obj.get('questions',obj) if isinstance(obj,dict) else obj
                 if isinstance(quiz,list) and len(quiz)==5 and all(len(q.get('options',[]))==4 and isinstance(q.get('answer'),int) and 0<=q['answer']<4 and q.get('explanation') for q in quiz):
                     d['quiz']=quiz; d['quizModel']=model; d['quizSeconds']=round(time.time()-started,1); Path(path).write_text(json.dumps(d,ensure_ascii=False),encoding='utf-8'); return path,model,d['quizSeconds'],None
@@ -26,5 +26,5 @@ def work(path):
     started=time.time()
     return generate(path)
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
     for path,model,seconds,error in pool.map(work,files): print(f'{path}: {model or "FAILED"} {seconds}s {error or ""}',flush=True)
