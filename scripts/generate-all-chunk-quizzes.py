@@ -4,8 +4,14 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 MODELS=['gemma4:e2b-nvfp4','qwen2.5vl:3b']
-files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
-files=[f for f in files if len(json.load(open(f)).get('quiz',[]))!=5]
+all_files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
+loaded={f:json.load(open(f)) for f in all_files}
+question_paths={}
+for f,d in loaded.items():
+    for q in d.get('quiz',[]):
+        if q.get('question'): question_paths.setdefault(q['question'].strip().lower(),[]).append(f)
+duplicate_paths={p for paths in question_paths.values() if len(paths)>1 for p in paths}
+files=[f for f in all_files if len(loaded[f].get('quiz',[]))!=5 or f in duplicate_paths]
 status_path=Path('content/quiz-generation-status.json')
 all_files=sorted(glob.glob('content/chunks/day-*.json')+glob.glob('content/books/*/chunks/day-*.json'))
 def write_status(current=None,last=None,failed=None):
